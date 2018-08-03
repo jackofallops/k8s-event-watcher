@@ -10,4 +10,4 @@ RUN apt-get update && apt-get install -y kubectl
 
 ENTRYPOINT [ "kubectl" ]
 
-CMD [ "get", "events", "--watch-only" ]
+CMD [ "get", "events", "--watch-only", "--all-namespaces" ]
